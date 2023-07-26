@@ -2,4 +2,4 @@
 
 https://netflix-473cc.web.app/
 
-`Will continue backend  for user sign in sign up functions and auth`
+`Will continue backend  for user sign in sign up functions, stripe payment and auth`
