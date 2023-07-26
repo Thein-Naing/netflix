@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Row from './components/Row';
+import requests from './utils/Requests';
+import Banner from './components/Banner';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Banner />
+
+      {/* title */}
+      {/* container -> movies posters*/}
+        {/* <Row title="NetflixOriginal" fetchURL={requests.NetflixOriginal}/> */}
+        <Row title="Now Playing" fetchURL={requests.NowPlaying}
+        isLargeRow/>
+        <Row title="Trending" fetchURL={requests.Trending}/>
+        <Row title="Popular" fetchURL={requests.Popular}/>
+        <Row title="TopRated" fetchURL={requests.TopRated}/>
+        <Row title="Horror" fetchURL={requests.Horror} />
+      {/* <Router>
+      {/* <Router>
+
+      {/* <Router>
+        <Routes>
+          <Route />
+        </Routes>
+      </Router> */}
     </div>
   );
 }
