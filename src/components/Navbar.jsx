@@ -1,8 +1,9 @@
 import netflix from "../images/netflix.png";
-import avatar from "../images/avatar.png";
+import netflixuser from "../images/netflixuser.png";
 import "../Style/Navbar.css";
 
 const Navbar = () => {
+
   return (
     <div className="nav nav__black">
       <div className="nav__contents">
@@ -12,7 +13,7 @@ const Navbar = () => {
           src={netflix}
           alt="logo"
         />
-        <img className="nav__avatar" src={avatar} alt="avatar" />
+        <img className="nav__avatar" src={netflixuser} alt="avatar" />
       </div>
     </div>
   );
